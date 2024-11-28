@@ -1,0 +1,58 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Task 1: Smooth Hover Transition for Links */
+nav {
+    text-align: center;
+    margin: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav a:hover {
+    color: blue;
+}
+
+/* Task 2: Animated Button on Click */
+.animated-button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease; /* Smooth animation */
+}
+
+.animated-button:active {
+    transform: scale(1.1); /* Slightly increase size when clicked */
+}
+
+/* Continuous Reverse Rotation Animation for an Icon */
+.rotating-icon {
+    text-align: center;
+    margin: 40px 0;
+}
+.rotating-icon img {
+    width: 100px;
+    animation: reverse-rotate 3s linear infinite; /* Spins continuously in reverse */
+}
+@keyframes reverse-rotate {
+    from {
+        transform: rotate(0deg); /* Start at 0 degrees */
+    }
+    to {
+        transform: rotate(-360deg); /* Rotate counterclockwise to -360 degrees */
+    }
+}

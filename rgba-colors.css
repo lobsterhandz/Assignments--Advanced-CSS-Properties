@@ -1,0 +1,37 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Task 1: Apply RGBA Background Colors */
+.background-fade {
+    background-color: rgba(0, 0, 255, 0.5); /* Semi-transparent blue */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Task 2: Enhance Text Visibility with RGBA */
+.header-shadow {
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+/* Task 3: Interactive Buttons with RGBA Hover Effects */
+.hover-button {
+    background-color: rgba(255, 0, 0, 0.8); /* Solid red */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.hover-button:hover {
+    background-color: rgba(0, 255, 0, 0.8); /* Change to green on hover */
+}
